@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WorkOB/Oxylabs-Proxy-Integration-with-Playwright.git"
+    "url": "git+https://github.com/oxylabs/playwright-proxy-integration-js.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/WorkOB/Oxylabs-Proxy-Integration-with-Playwright/issues"
+    "url": "https://github.com/oxylabs/playwright-proxy-integration-js/issues"
   },
-  "homepage": "https://github.com/WorkOB/Oxylabs-Proxy-Integration-with-Playwright#readme",
+  "homepage": "https://github.com/oxylabs/playwright-proxy-integration-js#readme",
   "dependencies": {
     "playwright": "^1.17.2"
   }
