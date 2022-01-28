@@ -1,6 +1,6 @@
 # Oxylabs' Proxy Integration with Playwright 
 
-[<img src="https://img.shields.io/static/v1?label=&message=JavaScript&color=brightgreen" />](https://github.com/topics/python) [<img src="https://img.shields.io/static/v1?label=&message=Web%20Scraping&color=important" />](https://github.com/topics/web-scraping) [<img src="https://img.shields.io/static/v1?label=&message=Rotating%20Proxies&color=blueviolet" />](https://github.com/topics/rotating-proxies)
+[<img src="https://img.shields.io/static/v1?label=&message=JavaScript&color=brightgreen" />](https://github.com/topics/javascript) [<img src="https://img.shields.io/static/v1?label=&message=Web%20Scraping&color=important" />](https://github.com/topics/web-scraping) [<img src="https://img.shields.io/static/v1?label=&message=Rotating%20Proxies&color=blueviolet" />](https://github.com/topics/rotating-proxies)
 - [Requirements](#requirements)
 - [Integrating Datacenter Proxies](#integrating-datacenter-proxies)
 - [Integrating Residential Proxies](#integrating-residential-proxies)
@@ -15,7 +15,7 @@ npm install playwright
 
 ### Getting a List of Proxies
 
-Open the following URL in the browser, enter your credentials,  and you will see a list of proxies in plain text:
+Open the following URL in the browser and enter your credentials. You will see a list of proxies in plain text:
 
 ```
 https://proxy.oxylabs.io/all
@@ -23,7 +23,7 @@ https://proxy.oxylabs.io/all
 
 ### Using Proxies
 
-If you wish to select any one of the proxies, save the proxy IP, along with the port in a variable.
+If you wish to select any of the provided proxies, you need to save the proxy IP, along with the port, in a variable.
 
 To use all these proxies, first, save these proxies as an array in your code:
 
@@ -36,13 +36,13 @@ let proxies = [
   ]
 ```
 
-To select one of these randomly, use the following line of code:
+To select one of the proxies randomly, use the following line of code:
 
 ```JavaScript
 var proxy = proxies[Math.floor(Math.random() * proxies.length)];
 ```
 
-create a variable called `launchOptions` and assign the proxy information to it.
+Create a variable called `launchOptions` and assign the proxy information to it.
 
 Don't forget to replace `USERNAME` and `PASSWORD` with your proxy user credentials.
 
@@ -97,7 +97,7 @@ For the complete code sample, see [this file](residential_random.js).
 
 ### Country Specific Proxies
 
-If you wish to use country-specific proxies, all you need to do is to change the `proxy` `server`.
+If you wish to use country-specific proxies, all you need to do is change the proxy server.
 
 For example, if you wish to use the proxy for the United States, you can use the following code:
 
@@ -113,7 +113,7 @@ const launchOptions = {
 
 ```
 
-In this example, `us-pr.oxylabs.io:10000` is the country specific entry point for United States.
+In this example, us-pr.oxylabs.io:10000 is the country specific entry point for the United States.
 
 Another example is `gb-pr.oxylabs.io:20000`, which is the country specific entry point for United Kingdom.
 
